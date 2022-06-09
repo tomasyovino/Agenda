@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: coral;
+    font-size: 16px;
+}
+
+#app{
+    background-color: aliceblue;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.875em;
+    width: 50em;
+    height: auto;
+}
+
+.title{
+    font-size: 2.25em;
+    margin: 1.25em 0;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3125em;
+    padding-bottom: 4.6875em;
+}
+
+input{
+    padding: 0.625em 1.25em;
+}
+
+.refillable-input{
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+.refillable-input:focus{
+    border: 1px solid coral;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    border: 0;
+    border-radius: 15px;
+    background-color: cornflowerblue;
+    color: #f9f9ff;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(90, 133, 214);
+}
+input[type="submit"]:active{
+    background-color: rgb(72, 108, 175);
+}
+
+#eventsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 37.5em;
+    height: auto;
+    gap: 7px;
+    margin: 1.25em 0;
+}
+
+.event{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 7.8125em;
+    gap: 0.3125em;
+    padding: 0.3125em;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bDelete{
+    cursor: pointer;
+    border: 0;
+    border-radius: 15px;
+    background-color: rgb(223, 71, 89);
+    color: #f9f9ff;
+    padding: 0.3125em;
+}
+
+@media (max-width: 992px) {
+    body{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        font-size: 12px;
+    }
+
+    .bDelete{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    body{
+        font-size: 10px;
+    }
+
+    .bDelete{
+        font-size: 8px;
+    }
+}

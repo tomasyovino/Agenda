@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1 class="title">Calendar</h1>   
+        <form class="form" >
+            <input class="refillable-input" type="text" placeholder="Program event" id="eventName">
+            <input class="refillable-input" type="date" id="eventDate">
+            <input type="submit" id="bAdd" value="Add event">
+        </form>
+
+        <div id="eventsContainer"></div>
+    </div>
+    
+    <script src="./JS/main.js"></script>
+</body>
+</html>
